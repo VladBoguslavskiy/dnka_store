@@ -1,9 +1,9 @@
 import ProductCard from "@/components/ProductCard";
-import { getProductsTag } from "@/lib/actions/actions";
+import { getManProducts } from "@/lib/actions/actions";
 
 const MensClothing = async () => {
   // Отримуємо всі товари для чоловічого одягу
-  const mensClothingProducts = await getProductsTag("чоловічий"); // Передайте тег "чоловічий"
+  const mensClothingProducts = await getManProducts("Чоловічий"); // Передайте тег "чоловічий"
 
   // Фільтруємо товари за тегом "чоловічий"
   const filteredProducts = mensClothingProducts.filter((product: ProductType) =>

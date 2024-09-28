@@ -36,6 +36,12 @@ const Navbar = () => {
         >
           Головна
         </Link>
+		  <Link
+          href="/mens-clothing"
+          className={`hover:text-red-1 ${pathname === "/mens-clothing" && "text-red-1"}`}
+        >
+          Чоловічий одяг
+        </Link>
         <Link
           href={user ? "/wishlist" : "/sign-in"}
           className={`hover:text-red-1 ${
@@ -51,12 +57,6 @@ const Navbar = () => {
           }`}
         >
           Закази
-        </Link>
-		  <Link
-          href="/mens-clothing"
-          className={`hover:text-red-1 ${pathname === "/mens-clothing" && "text-red-1"}`}
-        >
-          Чоловічий одяг
         </Link>
       </div>
 

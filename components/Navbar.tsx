@@ -52,6 +52,12 @@ const Navbar = () => {
         >
           Закази
         </Link>
+		  <Link
+          href="/mens-clothing"
+          className={`hover:text-red-1 ${pathname === "/mens-clothing" && "text-red-1"}`}
+        >
+          Чоловічий одяг
+        </Link>
       </div>
 
       <div className="flex gap-3 border border-grey-2 px-3 py-1 items-center rounded-lg">

@@ -9,16 +9,11 @@ const MensClothing = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      try {
-        const allProducts = await getProducts();
-        console.log(allProducts); // Для перевірки, чи продукти завантажуються
-        const filteredProducts = allProducts.filter((product: ProductType) =>
-          product.tags.includes("Чоловічий")
-        );
-        setProducts(filteredProducts);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-      }
+      const allProducts = await getProducts();
+      const filteredProducts = allProducts.filter((product: ProductType) =>
+        product.tags.includes("Чоловічий")
+      );
+      setProducts(filteredProducts);
     };
 
     fetchProducts();

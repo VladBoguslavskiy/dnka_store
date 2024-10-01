@@ -36,7 +36,7 @@ export const getRelatedProducts = async (productId: string) => {
 
 
 
-export const getManProducts = async (productId: string) => {
+export const getManProducts = async () => {
 	const product = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products/`)
 	return await product.json()
  }
